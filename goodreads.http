@@ -1,0 +1,68 @@
+GET http://localhost:3000/recipes/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzA5NzM2Mzc4fQ.aEC50YCFRQVklMwyOwX-vl-Fui8t4aNuNWnAvSaVR_4
+
+###
+
+GET http://localhost:3000/recipes/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzA5NzM2Mzc4fQ.aEC50YCFRQVklMwyOwX-vl-Fui8t4aNuNWnAvSaVR_4
+
+###
+
+POST http://localhost:3000/recipes/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzA5NzM2Mzc4fQ.aEC50YCFRQVklMwyOwX-vl-Fui8t4aNuNWnAvSaVR_4
+
+{
+    "title": "biryani",
+    "description": "description",
+    "ingredients": "ingredients",
+    "intructions": "instructions",
+    "id": 4
+}
+
+###
+
+PUT http://localhost:3000/recipes/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzA5NzM2Mzc4fQ.aEC50YCFRQVklMwyOwX-vl-Fui8t4aNuNWnAvSaVR_4
+
+{
+    "title": "mutton biryani",
+    "description": "description",
+    "ingredients": "ingredients",
+    "intructions": "instructions",
+    "id": 2
+}
+
+###
+
+DELETE http://localhost:3000/recipes/3/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzA5NzM2Mzc4fQ.aEC50YCFRQVklMwyOwX-vl-Fui8t4aNuNWnAvSaVR_4
+ 
+### 
+
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456",
+    "gender":"male",
+    "location":"hyderabad"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{    
+    "username": "rahul123",
+    "password": "rahul@456"
+}
+
+###
+
+GET http://localhost:3000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzA5NzM2Mzc4fQ.aEC50YCFRQVklMwyOwX-vl-Fui8t4aNuNWnAvSaVR_4
